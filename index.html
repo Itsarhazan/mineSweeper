@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Sweeper!</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+
+    <center>
+        <div class="container">
+
+            <h1 class="header">Mine Sweeper! </h1>
+
+            <button class="level-buttom" onclick="levels(4,2)">Easy</button>
+            <button class="level-buttom" onclick="levels(8,12)">Medium</button>
+            <button class="level-buttom" onclick="levels(12,30)">Hard</button>
+
+            <br>
+            <div class="smile-timer">
+                <button class="starter" onclick="restart()">😀</button>
+                <label id="minutes" class="header">00</label>:<label id="seconds" class="header">00</label>
+            </div>
+            <table class="board"> </table>
+            <br>
+            <span class="live">lives:</span><span class="lives">💖💖💖</span>
+
+
+
+        </div>
+    </center>
+    <script src="js/game.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+
+</html>
